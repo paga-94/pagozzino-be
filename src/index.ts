@@ -5,7 +5,7 @@ import nodemailer from "nodemailer";
 
 const app = express();
 const PORT = 3001;
-const FILE_PATH = "./src/invitati.json"; // TODO: change in guests.json
+const FILE_PATH = "./src/guests.json";
 const EMAIL = "lorenzopagani012@gmail.com";
 
 app.use(express.json());
@@ -95,5 +95,5 @@ app.post("/confirm", (req, res) => {
 
 // Avvia il server
 app.listen(PORT, () => {
-	console.log(`✅ Server in ascolto su http://localhost:${PORT}`);
+	console.log(`✅ Server in ascolto`);
 });
