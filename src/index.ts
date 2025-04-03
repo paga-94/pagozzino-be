@@ -5,7 +5,7 @@ import nodemailer from "nodemailer";
 
 const app = express();
 const PORT = 3001;
-const FILE_PATH = "./src/invitati.json";
+const FILE_PATH = "./src/invitati.json"; // TODO: change in guests.json
 const EMAIL = "lorenzopagani012@gmail.com";
 
 app.use(express.json());
@@ -14,7 +14,7 @@ app.use(cors());
 type Status = "ci sono" | "non ci sono" | null;
 
 // Tipi per TypeScript
-interface Invitato {
+interface Guest {
 	id: number;
 	nome: string;
 	cognome: string;
@@ -22,12 +22,12 @@ interface Invitato {
 }
 
 // Leggere gli invitati dal file JSON
-const leggiInvitati = (): Invitato[] => {
+const readGuests = (): Guest[] => {
 	return JSON.parse(fs.readFileSync(FILE_PATH, "utf8"));
 };
 
 // Scrivere gli invitati nel file JSON
-const scriviInvitati = (data: Invitato[]) => {
+const writeGuests = (data: Guest[]) => {
 	fs.writeFileSync(FILE_PATH, JSON.stringify(data, null, 2));
 };
 
@@ -41,23 +41,23 @@ const transporter = nodemailer.createTransport({
 });
 
 // Funzione per inviare l'email
-const inviaEmail = (data: Invitato[], invitato?: Invitato) => {
+const sendEmail = (data: Guest[], guest?: Guest) => {
+	let statusDescription = "non si sa";
+
+	if (guest?.status === "ci sono") {
+		statusDescription = "è una brava persona";
+	} else if (guest?.status === "non ci sono") {
+		statusDescription = "è un super cattivo";
+	}
+
 	const mailOptions = {
 		from: EMAIL,
 		to: EMAIL,
 		subject: "Aggiornamento Invitati",
-		text: `Ecco il file JSON aggiornato degli invitati.\n\n${invitato?.nome} ${
-			invitato?.cognome
-		}: ${
-			!invitato?.status
-				? "non si sa"
-				: invitato?.status === "ci sono"
-				? "è una brava persona"
-				: "è un super cattivo"
-		}`,
+		text: `Ecco il file JSON aggiornato degli invitati.\n\n${guest?.nome} ${guest?.cognome}: ${statusDescription}\n\n`,
 		attachments: [
 			{
-				filename: "invitati.json",
+				filename: "guests.json",
 				content: JSON.stringify(data, null, 2),
 			},
 		],
@@ -72,25 +72,25 @@ const inviaEmail = (data: Invitato[], invitato?: Invitato) => {
 };
 
 // Endpoint per ottenere gli invitati
-app.get("/invitati", (req, res) => {
-	res.json(leggiInvitati());
+app.get("/guests", (req, res) => {
+	res.json(readGuests());
 });
 
 // Endpoint per aggiornare lo stato di un invitato
-app.post("/conferma", (req, res) => {
+app.post("/confirm", (req, res) => {
 	const { id, status, note } = req.body;
-	let invitatiAggiornati = leggiInvitati();
+	let updatedGuests = readGuests();
 
-	invitatiAggiornati = invitatiAggiornati.map((inv) =>
+	updatedGuests = updatedGuests.map((inv) =>
 		inv.id === id ? { ...inv, status, note } : inv
 	);
 
-	scriviInvitati(invitatiAggiornati);
-	inviaEmail(
-		invitatiAggiornati,
-		invitatiAggiornati.find((inv) => inv.id === id)
+	writeGuests(updatedGuests);
+	sendEmail(
+		updatedGuests,
+		updatedGuests.find((inv) => inv.id === id)
 	);
-	res.json({ message: "Conferma aggiornata!", invitati: invitatiAggiornati });
+	res.json({ message: "Conferma aggiornata!", guests: updatedGuests });
 });
 
 // Avvia il server

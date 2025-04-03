@@ -1,482 +1,443 @@
 [
-	{
-		"id": 1,
-		"nome": "Anna",
-		"cognome": "Paonessa",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 2,
-		"nome": "Giuseppe",
-		"cognome": "Ragozzino",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 3,
-		"nome": "Luigi",
-		"cognome": "Ragozzino",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 3,
-		"nome": "Jessica",
-		"cognome": "Russo",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 4,
-		"nome": "Paola",
-		"cognome": "Torri Tarelli",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 5,
-		"nome": "Giovanni",
-		"cognome": "Pagani",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 6,
-		"nome": "Sara",
-		"cognome": "Pagani",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 7,
-		"nome": "Francesco",
-		"cognome": "Pagani",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 8,
-		"nome": "Giulia",
-		"cognome": "Scarabello",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 9,
-		"nome": "Tommaso",
-		"cognome": "Pagani",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 10,
-		"nome": "Laura",
-		"cognome": "Ragazzi",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 11,
-		"nome": "Silvana",
-		"cognome": "Canziani",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 12,
-		"nome": "Adolfo",
-		"cognome": "Torri Tarelli",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 13,
-		"nome": "Cristina",
-		"cognome": "Torri Tarelli",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 14,
-		"nome": "Paolo",
-		"cognome": "Gozzoli",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 15,
-		"nome": "Giulia",
-		"cognome": "Gozzoli",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 16,
-		"nome": "Francesco",
-		"cognome": "Bon",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 17,
-		"nome": "Marta",
-		"cognome": "Gozzoli",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 18,
-		"nome": "Chiara",
-		"cognome": "Gozzoli",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 20,
-		"nome": "Ivana",
-		"cognome": "Ranieri",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 21,
-		"nome": "Francesco",
-		"cognome": "Ronchi",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 22,
-		"nome": "Sally",
-		"cognome": "",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 23,
-		"nome": "Chiara",
-		"cognome": "Ronchi",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 24,
-		"nome": "Fabio",
-		"cognome": "",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 25,
-		"nome": "Valentina",
-		"cognome": "Ronchi",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 26,
-		"nome": "Paolo",
-		"cognome": "Ronchi",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 27,
-		"nome": "Stefano",
-		"cognome": "Ronchi",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 28,
-		"nome": "Giovanni",
-		"cognome": "Ronchi",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 29,
-		"nome": "Ivana",
-		"cognome": "Tremolada",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 30,
-		"nome": "Saverio",
-		"cognome": "",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 31,
-		"nome": "Giuliana",
-		"cognome": "Di Maggio",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 32,
-		"nome": "Umberto",
-		"cognome": "",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 33,
-		"nome": "Francesco",
-		"cognome": "Gaggiano",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 34,
-		"nome": "Riccardo",
-		"cognome": "Marchetti",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 35,
-		"nome": "Chiara",
-		"cognome": "Saglia",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 36,
-		"nome": "Roberto",
-		"cognome": "Bertoncelli",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 37,
-		"nome": "Federica",
-		"cognome": "Panzarino",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 38,
-		"nome": "Tommaso",
-		"cognome": "Roberti",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 39,
-		"nome": "Alessia",
-		"cognome": "",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 40,
-		"nome": "Luca",
-		"cognome": "De Cesare",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 41,
-		"nome": "Shara",
-		"cognome": "",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 42,
-		"nome": "Alessandro",
-		"cognome": "Agnelli",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 43,
-		"nome": "Greta",
-		"cognome": "Lanzi",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 44,
-		"nome": "Alessandro",
-		"cognome": "Valente",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 45,
-		"nome": "Vittorio",
-		"cognome": "Pellegrini",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 46,
-		"nome": "Davide",
-		"cognome": "Tempesta",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 47,
-		"nome": "Erika",
-		"cognome": "Udeschini",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 48,
-		"nome": "Tommaso",
-		"cognome": "Caiuli",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 49,
-		"nome": "Roberto",
-		"cognome": "Valerio",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 50,
-		"nome": "Matteo",
-		"cognome": "Messina",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 51,
-		"nome": "Fabio",
-		"cognome": "Poloni",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 52,
-		"nome": "Angela",
-		"cognome": "",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 53,
-		"nome": "Giacomo",
-		"cognome": "Lesma",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 54,
-		"nome": "Cristian",
-		"cognome": "Gulizia",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 55,
-		"nome": "Stefano",
-		"cognome": "Lanzi",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 56,
-		"nome": "Matteo",
-		"cognome": "Doni",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 57,
-		"nome": "Daniela",
-		"cognome": "",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 58,
-		"nome": "Federico",
-		"cognome": "Pisa",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 59,
-		"nome": "Sara",
-		"cognome": "",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 60,
-		"nome": "Simone",
-		"cognome": "Daguati",
-		"status": null,
-		"note": ""
-	},
-
-	{
-		"id": 61,
-		"nome": "Patrizia",
-		"cognome": "Gozzoli",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 62,
-		"nome": "Lorenzo",
-		"cognome": "",
-		"status": null,
-		"note": ""
-	},
-	{
-		"id": 63,
-		"nome": "Luca",
-		"cognome": "",
-		"status": null,
-		"note": ""
-	}
+  {
+    "id": 1,
+    "nome": "Anna",
+    "cognome": "Paonessa",
+    "status": "non ci sono",
+    "note": ""
+  },
+  {
+    "id": 2,
+    "nome": "Giuseppe",
+    "cognome": "Ragozzino",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 3,
+    "nome": "Luigi",
+    "cognome": "Ragozzino",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 3,
+    "nome": "Jessica",
+    "cognome": "Russo",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 4,
+    "nome": "Paola",
+    "cognome": "Torri Tarelli",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 5,
+    "nome": "Giovanni",
+    "cognome": "Pagani",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 6,
+    "nome": "Sara",
+    "cognome": "Pagani",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 7,
+    "nome": "Francesco",
+    "cognome": "Pagani",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 8,
+    "nome": "Giulia",
+    "cognome": "Scarabello",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 9,
+    "nome": "Tommaso",
+    "cognome": "Pagani",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 10,
+    "nome": "Laura",
+    "cognome": "Ragazzi",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 11,
+    "nome": "Silvana",
+    "cognome": "Canziani",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 12,
+    "nome": "Adolfo",
+    "cognome": "Torri Tarelli",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 13,
+    "nome": "Cristina",
+    "cognome": "Torri Tarelli",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 14,
+    "nome": "Paolo",
+    "cognome": "Gozzoli",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 15,
+    "nome": "Giulia",
+    "cognome": "Gozzoli",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 16,
+    "nome": "Francesco",
+    "cognome": "Bon",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 17,
+    "nome": "Marta",
+    "cognome": "Gozzoli",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 18,
+    "nome": "Chiara",
+    "cognome": "Gozzoli",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 20,
+    "nome": "Ivana",
+    "cognome": "Ranieri",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 21,
+    "nome": "Francesco",
+    "cognome": "Ronchi",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 22,
+    "nome": "Sally",
+    "cognome": "",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 23,
+    "nome": "Chiara",
+    "cognome": "Ronchi",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 24,
+    "nome": "Fabio",
+    "cognome": "",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 25,
+    "nome": "Valentina",
+    "cognome": "Ronchi",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 26,
+    "nome": "Paolo",
+    "cognome": "Ronchi",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 27,
+    "nome": "Stefano",
+    "cognome": "Ronchi",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 28,
+    "nome": "Giovanni",
+    "cognome": "Ronchi",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 29,
+    "nome": "Ivana",
+    "cognome": "Tremolada",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 30,
+    "nome": "Saverio",
+    "cognome": "",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 31,
+    "nome": "Giuliana",
+    "cognome": "Di Maggio",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 32,
+    "nome": "Umberto",
+    "cognome": "",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 33,
+    "nome": "Francesco",
+    "cognome": "Gaggiano",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 34,
+    "nome": "Riccardo",
+    "cognome": "Marchetti",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 35,
+    "nome": "Chiara",
+    "cognome": "Saglia",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 36,
+    "nome": "Roberto",
+    "cognome": "Bertoncelli",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 37,
+    "nome": "Federica",
+    "cognome": "Panzarino",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 38,
+    "nome": "Tommaso",
+    "cognome": "Roberti",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 39,
+    "nome": "Alessia",
+    "cognome": "",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 40,
+    "nome": "Luca",
+    "cognome": "De Cesare",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 41,
+    "nome": "Shara",
+    "cognome": "",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 42,
+    "nome": "Alessandro",
+    "cognome": "Agnelli",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 43,
+    "nome": "Greta",
+    "cognome": "Lanzi",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 44,
+    "nome": "Alessandro",
+    "cognome": "Valente",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 45,
+    "nome": "Vittorio",
+    "cognome": "Pellegrini",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 46,
+    "nome": "Davide",
+    "cognome": "Tempesta",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 47,
+    "nome": "Erika",
+    "cognome": "Udeschini",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 48,
+    "nome": "Tommaso",
+    "cognome": "Caiuli",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 49,
+    "nome": "Roberto",
+    "cognome": "Valerio",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 50,
+    "nome": "Matteo",
+    "cognome": "Messina",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 51,
+    "nome": "Fabio",
+    "cognome": "Poloni",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 52,
+    "nome": "Angela",
+    "cognome": "",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 53,
+    "nome": "Giacomo",
+    "cognome": "Lesma",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 54,
+    "nome": "Cristian",
+    "cognome": "Gulizia",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 55,
+    "nome": "Stefano",
+    "cognome": "Lanzi",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 56,
+    "nome": "Matteo",
+    "cognome": "Doni",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 57,
+    "nome": "Daniela",
+    "cognome": "",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 58,
+    "nome": "Federico",
+    "cognome": "Pisa",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 59,
+    "nome": "Sara",
+    "cognome": "",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 60,
+    "nome": "Simone",
+    "cognome": "Daguati",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 61,
+    "nome": "Patrizia",
+    "cognome": "Gozzoli",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 62,
+    "nome": "Lorenzo",
+    "cognome": "",
+    "status": null,
+    "note": ""
+  },
+  {
+    "id": 63,
+    "nome": "Luca",
+    "cognome": "",
+    "status": null,
+    "note": ""
+  }
 ]
