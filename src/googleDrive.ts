@@ -1,5 +1,6 @@
 import dotenv from "dotenv";
 import { google } from "googleapis";
+import { Readable } from "stream";
 
 dotenv.config();
 
@@ -41,13 +42,16 @@ export const readJsonFromDrive = async () => {
 };
 
 export const writeJsonToDrive = async (jsonData: any) => {
-	const buffer = Buffer.from(JSON.stringify(jsonData, null, 2));
+	const jsonString = JSON.stringify(jsonData, null, 2);
+
+	// Crea uno stream leggibile a partire dalla stringa JSON
+	const stream = Readable.from([jsonString]);
 
 	await drive.files.update({
 		fileId: DRIVE_FILE_ID,
 		media: {
 			mimeType: "application/json",
-			body: buffer,
+			body: stream, // usa lo stream invece del buffer
 		},
 	});
 };
