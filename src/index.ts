@@ -2,7 +2,6 @@ import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
 import nodemailer from "nodemailer";
-import v8 from "v8";
 import { readJsonFromDrive, writeJsonToDrive } from "./googleDrive";
 
 dotenv.config();
@@ -31,12 +30,6 @@ const transporter = nodemailer.createTransport({
 		user: EMAIL,
 		pass: EMAIL_PASS,
 	},
-});
-
-app.get("/memory-usage", (req, res) => {
-	const memoryUsage = process.memoryUsage();
-	const heapStatistics = v8.getHeapStatistics();
-	res.json({ memoryUsage, heapStatistics });
 });
 
 const sendEmail = (data: Guest[], guest?: Guest) => {
@@ -84,7 +77,8 @@ app.get("/guests", async (req, res) => {
 // Endpoint per aggiornare lo stato di un invitato
 app.post("/confirm", async (req, res) => {
 	const { id, status, note } = req.body;
-	let updatedGuests = await readJsonFromDrive();
+	// let updatedGuests = await readJsonFromDrive();
+	let updatedGuests: any = [];
 
 	updatedGuests = updatedGuests.map((inv: Guest) =>
 		inv.id === id ? { ...inv, status, note } : inv

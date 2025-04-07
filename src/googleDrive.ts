@@ -1,6 +1,6 @@
 import dotenv from "dotenv";
-import { google } from "googleapis";
-import { Readable } from "stream";
+import { GoogleAuth } from "google-auth-library";
+import { drive_v3 } from "googleapis/build/src/apis/drive";
 
 dotenv.config();
 
@@ -9,9 +9,10 @@ const SCOPES = [
 	"https://www.googleapis.com/auth/drive.file",
 	"https://www.googleapis.com/auth/drive",
 ];
+
 const DRIVE_FILE_ID = process.env.DRIVE_FILE_ID;
 
-const auth = new google.auth.GoogleAuth({
+const auth = new GoogleAuth({
 	credentials: {
 		type: process.env.TYPE,
 		project_id: process.env.PROJECT_ID,
@@ -24,7 +25,7 @@ const auth = new google.auth.GoogleAuth({
 	scopes: SCOPES,
 });
 
-const drive = google.drive({ version: "v3", auth });
+const drive = new drive_v3.Drive({ auth });
 
 export const readJsonFromDrive = async () => {
 	const res = await drive.files.get(
@@ -42,16 +43,13 @@ export const readJsonFromDrive = async () => {
 };
 
 export const writeJsonToDrive = async (jsonData: any) => {
-	const jsonString = JSON.stringify(jsonData, null, 2);
-
-	// Crea uno stream leggibile a partire dalla stringa JSON
-	const stream = Readable.from([jsonString]);
+	const buffer = Buffer.from(JSON.stringify(jsonData, null, 2));
 
 	await drive.files.update({
 		fileId: DRIVE_FILE_ID,
 		media: {
 			mimeType: "application/json",
-			body: stream, // usa lo stream invece del buffer
+			body: buffer,
 		},
 	});
 };
