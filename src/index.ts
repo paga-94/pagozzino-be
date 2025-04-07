@@ -77,8 +77,7 @@ app.get("/guests", async (req, res) => {
 // Endpoint per aggiornare lo stato di un invitato
 app.post("/confirm", async (req, res) => {
 	const { id, status, note } = req.body;
-	// let updatedGuests = await readJsonFromDrive();
-	let updatedGuests: any = [];
+	let updatedGuests = await readJsonFromDrive();
 
 	updatedGuests = updatedGuests.map((inv: Guest) =>
 		inv.id === id ? { ...inv, status, note } : inv
